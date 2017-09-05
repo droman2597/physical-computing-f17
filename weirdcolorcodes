@@ -1,0 +1,26 @@
+void setup() {
+
+  size (500,500);
+  background(0);
+  noStroke();
+}
+
+void draw(){
+  //fill(255,0,0);
+  //noStroke();
+  //rect(0,height/2,width,height/2);
+float myRed = map(mouseX, random(255), width, 0, random(255));
+float myGreen = map(mouseY, random(255), height, 0,random(255));
+
+fill(myRed, myGreen, random(255));
+ellipse(mouseX,mouseY, random(255), random(255));
+
+//fill(0,255,0);
+//noStroke();
+//rect(width/2,0,width/2,height/2);
+
+//fill(128,064,000);
+//noStroke();
+//rect(0,0,width/2,height/2);
+
+}
